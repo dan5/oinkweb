@@ -1,0 +1,63 @@
+/* [Reset Styles] ============================================================ */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  text-align: center;
+  font-size: 16px;
+  font-family: sans-serif;
+  /*overflow-y: scroll; */ }
+
+* html body {
+  font-size: 1em;
+  /* IE 6 or sooner */ }
+
+/* [General Styles] ============================================================ */
+h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, ol {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px; }
+
+li {
+  list-style: none; }
+
+caption {
+  font-weight: bold; }
+
+/* [General Classes] ============================================================ */
+.right {
+  text-align: right; }
+
+.left {
+  text-align: left; }
+
+.center {
+  text-align: center; }
+
+img.left {
+  float: left;
+  padding: 0 10px 10px 0; }
+img.right {
+  float: right;
+  padding: 0 0 10px 10px; }
+
+.caution {
+  color: #cc0000; }
+
+.del {
+  text-decoration: line-through; }
+
+.medium {
+  font-size: medium; }
+
+.large {
+  font-size: large; }
+
+.larger {
+  font-size: larger; }
+
+.bold {
+  font-weight: bolder; }

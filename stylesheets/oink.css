@@ -1,0 +1,122 @@
+@charset "UTF-8";
+body {
+  text-align: center;
+  background-color: #1bacc7;
+  color: #fbf7ed; }
+
+a img {
+  border: none; }
+
+.wrappaer {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center; }
+
+.contents {
+  margin: 14px 20px;
+  text-align: right; }
+
+.aboutoink {
+  margin-right: 4px;
+  margin-top: -2px; }
+  .aboutoink a {
+    color: #e60012;
+    font-size: 11px;
+    text-decoration: none; }
+  .aboutoink a:hover {
+    text-decoration: underline; }
+
+#footter {
+  text-align: right;
+  font-size: 12px; }
+
+h1 {
+  margin-top: 20px;
+  font-size: 48px;
+  line-height: 1.8;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px; }
+
+.details {
+  margin-top: 40px;
+  text-align: left;
+  width: 100%; }
+
+.details p {
+  margin-left: 362px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.8; }
+
+.product .stamps {
+  background: url("../images/item03_stamps.png") no-repeat 0 0; }
+.product .yabu {
+  background: url("../images/item02_yabu.png") no-repeat 0 0; }
+.product .stray {
+  background: url("../images/item01_stray.png") no-repeat 0 0; }
+
+.product .stamps,
+.product .yabu,
+.product .stray {
+  margin-bottom: 40px;
+  padding-top: 195px;
+  padding-left: 360px;
+  padding-right: 30px;
+  text-align: left; }
+  .product .stamps .sentence,
+  .product .yabu .sentence,
+  .product .stray .sentence {
+    height: 205px;
+    color: #333333; }
+    .product .stamps .sentence h2,
+    .product .yabu .sentence h2,
+    .product .stray .sentence h2 {
+      margin-top: 20px;
+      margin-bottom: 15px;
+      font-size: 24px;
+      letter-spacing: 1px; }
+    .product .stamps .sentence p,
+    .product .yabu .sentence p,
+    .product .stray .sentence p {
+      margin-bottom: 5px;
+      font-size: 12px;
+      height: 56px; }
+    .product .stamps .sentence td.spec,
+    .product .yabu .sentence td.spec,
+    .product .stray .sentence td.spec {
+      width: 282px;
+      font-size: 12px;
+      color: #1bacc7; }
+    .product .stamps .sentence td.button0,
+    .product .yabu .sentence td.button0,
+    .product .stray .sentence td.button0 {
+      width: 145px; }
+
+.about {
+  margin-top: 40px;
+  background: url("../images/about_bg.png") no-repeat 0 0;
+  height: 351px;
+  padding: 20px 45px;
+  color: #333333; }
+
+.about-top {
+  margin-left: 320px;
+  font-size: 12px;
+  height: 156px;
+  text-align: left; }
+  .about-top td {
+    padding: 4px 4px; }
+
+.about-middle {
+  background: url("../images/hr_blue_dash.png") no-repeat 0 0;
+  height: 20px; }
+  .about-middle hr {
+    border: 0; }
+
+.about-bottom {
+  text-align: left; }
+  .about-bottom .address {
+    height: 90px;
+    font-size: 12px;
+    line-height: 1.8; }

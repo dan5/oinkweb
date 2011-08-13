@@ -1,0 +1,70 @@
+!!! XML
+!!! 1.1
+%html{"xml:lang" => "ja", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    = `haml header.haml`
+    %title Oink Games
+  %body
+    .wrappaer
+      .contents
+        .title
+          %a{:href => "/"}
+            %img{:src => "images/logo.png"}
+        .aboutoink
+          %a{:href => "about.html"}
+            ＞ オインクゲームズについて
+          
+        %h1
+          ともだちと、家族と<br />
+          会話しながら楽しむ新しいゲーム
+        %div.details
+          %p テレビゲームでも、携帯ゲームでもない、目の前にいる友達や家族と会話を楽しみながら遊ぶ知的なゲーム。「シュピール」と呼ばれるこのようなゲームたちは、欧州や北米を中心に長く親しまれ、今また流行のきざしを見せています。
+          %p オインクゲームズは、まだ日本ではあまり知られていない「シュピール」を中心に、あたらしい遊びをどんどん創っていきます。ぜひ一度手にとって、その遊び心地を試してみてください。
+
+        - %w(stamps yabu stray).each do |name|
+
+          - texts = {
+          -   :stamps => [
+          -     "オークションのゲーム。美しいデザインの切手。", #
+          -     "有名ゲームデザイナー、ライナー・クニツィアの傑作オークションゲーム「モダン・アート」を日本語化。上手にオークションを操作し、できるだけ安く買って可能な限り高く売ろう。見た目の美しさにこだわり、カードはすべて切手サイズ。ぴったり収納できる細長い箱も、いい感じです。", #
+          -     "https://www.amazon.co.jp/dp/B0056DRAVI/ref=as_li_ss_til?tag=oinkgms-22&camp=1027&creative=7407&linkCode=as4&creativeASIN=B0056DRAVI&adid=0N9VK4ZZWTTYJXQ3QM6C&"
+          -   ], #
+          -   :yabu => [
+          -     "みんな殺人事件の目撃者。真犯人は、だれ？", #
+          -     "芥川龍之介の名作小説をモチーフにした推理＆ブラフゲーム。殺人現場の目撃者となり、他のメンバーの目撃証言と照らし合わせて真犯人を探し出しましょう。同じ事件を目撃しているはずなのにみんなの証言がくい違い、事件の真相が謎に包まれていきます。", #
+          -     "https://www.amazon.co.jp/dp/B005DJ9LDU/ref=as_li_ss_til?tag=oinkgms-22&camp=1027&creative=7407&linkCode=as4&creativeASIN=B005DJ9LDU&adid=0WKMZTZJREG7EKP9896J&"
+          -   ], #
+          -   :stray => [
+          -     "シンプルな心の読み合いを、たった5分で。", #
+          -     "サクッとお手軽にドキドキの心理戦が楽しめる、カンタン嘘つきゲーム。自分が何のカードを出したのかまわりにバレないように気をつけて。子供も大人も対等に遊べるので、ご家族でもどうぞ。パッケージもとてもコンパクト。より深い心理戦を楽しみたい方には拡張パックも。", #
+          -     "https://www.amazon.co.jp/dp/B005DJ9LD0/ref=as_li_ss_til?tag=brownstudy-22&camp=1027&creative=7407&linkCode=as4&creativeASIN=B005DJ9LD0&adid=1D1WNZQSJYDNN4Y4N3Y0&"
+          -   ]
+          - }
+
+          .product
+            %div{:class=>name}
+              .sentence
+                - text = texts[name.to_sym]
+                %h2= text[0]
+                %p= text[1]
+                %table
+                  %tr
+                    %td.spec
+                      ２ 〜 ６人用／1プレイ時間5分〜10分<br />
+                      対象年齢８歳以上
+                    %td.button0
+                      %a{:href => text[2],
+                        :onmouseover => "document.btn0_#{name}.src='images/btn_buy_on.png';",
+                        :onmouseout  => "document.btn0_#{name}.src='images/btn_buy.png';",
+                        :onmousedown => "document.btn0_#{name}.src='images/btn_buy_down.png';",
+                        :onmouseup   => "document.btn0_#{name}.src='images/btn_buy.png';"}
+                        %img{:name => "btn0_#{name}", :src => "images/btn_buy.png"}
+                    %td.button1
+                      %a{:onmouseover => "document.btn1_#{name}.src='images/btn_more_on.png';",
+                        :onmouseout  => "document.btn1_#{name}.src='images/btn_more.png';",
+                        :onmousedown => "document.btn1_#{name}.src='images/btn_more_down.png';",
+                        :onmouseup   => "document.btn1_#{name}.src='images/btn_more.png';"}
+                        %img{:name => "btn1_#{name}", :src => "images/btn_more.png"}
+  
+        #footter
+          = `haml footer.haml`
